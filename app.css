@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+    font-family: 'Raleway', sans-serif ;
+}
+
+body
+{
+    background-color: #efefef
+}
+
+#app
+{
+    max-width: 500px ;
+    margin: 0 auto ;
+}
+
+#app table
+{
+    background-color: #fff ;
+    margin: 100px auto 0 auto ;
+    border-collapse: collapse ;
+    text-align: left ;
+    box-shadow: 0 1px 2px 0px #9c9c9c ;
+    border-radius: 3px ;
+    width: 100% ;
+}
+
+#app table thead tr th,
+#app table tbody tr td
+{
+    padding: 10px 20px
+}
+
+#app table thead tr
+{
+    background-color: #7989e0 ;
+    border-bottom: 2px solid #7482d2
+}
+
+#app table thead tr th
+{
+    text-transform: uppercase ;
+    font-size: 13px ;
+    color: #fff
+}
+
+#app table tbody tr td
+{
+    color: rgb(116, 116, 116) ;
+    font-size: 14px ;
+    font-weight: 600 ;
+    white-space: nowrap ;
+}
+
+/* form */
+
+#app .create-form
+{
+    margin-top: 50px
+}
+
+#app .create-form form
+{
+    display: flex ;
+    flex-direction: column
+}
+
+#app .create-form form input,
+#app .create-form form button
+{
+    padding: 10px ;
+    outline: 0
+}
+
+#app .create-form form input
+{
+    margin-bottom: 5px ;
+    border: none ;
+    background: none ;
+    border: 1px solid #e0e0e0 ;
+    background-color: #fff ;
+    transition: all 0.3s ;
+}
+
+#app .create-form form input:focus
+{
+    border-color: #afafaf
+}
+
+#app .create-form form button
+{
+    cursor: pointer ;
+    background: none ;
+    border: none ;
+    color: #fff ;
+    background-color: #7989e0 ;
+    border-radius: 3px ;
+    font-weight: 600 ;
+    transition: all 0.3s
+}
+
+#app .create-form form button:hover,
+#app .create-form form button:focus,
+#app .create-form form button:active
+{
+    background-color: #8293f5
+}
+
+/* actions */
+
+
+.actions
+{
+    padding: 2em 0 ;
+    display: flex ;
+    justify-content: space-between ;
+}
+
+.actions button
+{
+    background: none ;
+    border: none ;
+    padding: 10px 20px ;
+    border-radius: 3px ;
+    box-shadow: 1px 1px 1px #545454 ;
+    color: #fff ;
+    cursor: pointer ;
+    outline: 0 ;
+    transition: all 0.3s ;
+    font-weight: 600
+}
+
+.actions button[disabled]
+{
+    cursor: no-drop
+}
+
+.actions button.save
+{
+    background-color: #878eb7
+}
+
+.actions button.save:hover
+{
+    background-color: #9da3c9
+}
+
+.actions button.deleteDB
+{
+    background-color: #ff4c4c
+}
+
+.actions button.deleteDB:hover
+{
+    background-color: #eb5f5f
+}
